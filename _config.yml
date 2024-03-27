@@ -14,7 +14,7 @@ name                     : &name "Yang Zhou"
 description              : &description "personal description"
 url                      : https://etayang10th.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/EtaYang10th"
+repository               : "EtaYang10th/etayang10th.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
