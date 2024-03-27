@@ -7,6 +7,8 @@ redirect_from:
   - /about.html
 ---
 
+I am a second year PhD student in the Department of Computer Science at [Rutgers University](https://www.rutgers.edu/), advised by Prof. Dimitris Metaxas. Before that, I obtained my M.S. degree in Computer Science from [University of Science and Technology of China](https://en.ustc.edu.cn/) in 2023, advised by Prof. Shuang Cong. I received my B.E degree in Automation from [Southwest University](http://admissions.swu.edu.cn/) in 2016.
+
 This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
 A data-driven personal website
