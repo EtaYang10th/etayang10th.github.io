@@ -8,7 +8,7 @@ v# Welcome to Jekyll!
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Yang Zhou / Ph.D."
+title                    : "Yang Zhou / Personal Homepage"
 title_separator          : "-"
 name                     : &name "Yang Zhou"
 description              : &description "personal description"
@@ -28,7 +28,7 @@ author:
   location         : "New Brunswick, New Jersey"
   employer         : "Rutgers University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "eta.yang@rutgers.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
