@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Yang Zhou"
-  pronouns         : # example: "she/her"  
+  pronouns         : "he/his"# example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "New Brunswick, New Jersey"
   employer         : "Rutgers University"
