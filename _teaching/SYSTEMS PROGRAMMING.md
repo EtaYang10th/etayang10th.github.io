@@ -2,7 +2,7 @@
 title: "SYSTEMS PROGRAMMING(2023FA,2024SP)"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/Command-Line Shell Implementation
+permalink: /teaching/SYSTEMS PROGRAMMING
 venue: "Rutgers, Computer Science Department"
 date: 2021-01-01
 location: "Rutgers, NJ"
