@@ -1,6 +1,7 @@
 ---
 title: "A multistory building evacuation model based on multiple-factor analysis"
 collection: publications
+permalink: /publication/2019-06-02-A-multistory-building-evacuation-model-based-on-multiple-factor-analysis.md
 excerpt: ''
 date: 2019-06-02
 venue: 'Advances in Civil Engineering'
