@@ -5,7 +5,7 @@ permalink: /publication/2019-06-02-A-multistory-building-evacuation-model-based-
 excerpt: ''
 date: 2019-06-02
 venue: 'Advances in Civil Engineering'
-paperurl: 'https://downloads.hindawi.com/journals/ace/2019/6585102.pdf?_gl=1*1psiwpl*_ga*MTAyNDQxMTY3NC4xNzE1NjIwNjQ5*_ga_NF5QFMJT5V*MTcxNTYyMDY0OS4xLjEuMTcxNTYyMDc0MS42MC4wLjA.&_ga=2.177535589.1178538985.1715620649-1024411674.1715620649'
+paperurl: 'https://downloads.hindawi.com/journals/ace/2019/6585102.pdf'
 citation: 'Zhou Y, Wu T, Zhang G, et al. A multistory building evacuation model based on multiple-factor analysis[J]. Advances in Civil Engineering, 2019, 2019.'
 ---
 
