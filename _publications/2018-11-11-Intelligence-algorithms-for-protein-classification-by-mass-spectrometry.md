@@ -1,7 +1,7 @@
 ---
 title: "Intelligence algorithms for protein classification by mass spectrometry"
 collection: publications
-permalink: /publication/2015-10-01-paper-title-number-3
+permalink: /publication/2018-11-11-Intelligence-algorithms-for-protein-classification-by-mass-spectrometry
 excerpt: ''
 date: 2018-11-11
 venue: 'BioMed Research International'
