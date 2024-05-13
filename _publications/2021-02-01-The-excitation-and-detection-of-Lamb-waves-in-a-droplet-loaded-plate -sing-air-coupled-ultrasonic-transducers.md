@@ -5,7 +5,7 @@ permalink: /publication/2021-02-01-The-excitation-and-detection-of-Lamb-waves-in
 excerpt: ''
 date: 2021-02-01
 venue: 'Measurement'
-paperurl: 'https://www.sciencedirect.com/science/article/pii/S0263224120314317/pdfft?md5=eefcb1e040ba667767872989ffded3bb&pid=1-s2.0-S0263224120314317-main.pdf'
+paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S0263224120314317'
 citation: 'Fan Z, Zhou Y, Wu T, et al. The excitation and detection of Lamb waves in a droplet-loaded plate using air-coupled ultrasonic transducers[J]. Measurement, 2021, 172: 108954.'
 ---
 
