@@ -1,7 +1,7 @@
 ---
 title: "A review of convolutional neural network architectures and their optimizations"
 collection: publications
-permalink: /publication/2022-06-22-A-review-of-convolutional-neural-network-architectures-and-their-optimizations.md
+permalink: /publication/2022-06-22-A-review-of-convolutional-neural-network-architectures-and-their-optimizations
 excerpt: ''
 date: 2022-6-22
 venue: 'Artificial Intelligence Review'
