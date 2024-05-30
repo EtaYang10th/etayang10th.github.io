@@ -17,29 +17,28 @@ Education
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Summer 2024: Research Assistant
+  * Rutgers University
+  * Duties included: Computer Vision
+  * Supervisor: Professor Dimitris Metaxas
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Fall 2023 - Spring 2024: Teaching Assistant
+  * Rutgers University
+  * Duties included: Systems Programming
+  * Supervisor: Professor David Menendez
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 2015: Teaching Assistant
+  * University of Science and Technology of China (USTC)
+  * Duties included: Neural Networks and Deep Learning
+  * Supervisor: Professor Shuang Cong
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming: Python, C, Java, SPSS, Matlab
+* Applications: TEX (LATEX, BibTEX, PSTricks), Most common productivity packages (for Windows and 
+Linux platforms), Microsoft Office (Word, Excel, PowerPoint).
+* Hardware: PC, Microcontroller, Arduino, PLC
+* Operating System Microsoft Windows, Linux.
 
 Publications
 ======
