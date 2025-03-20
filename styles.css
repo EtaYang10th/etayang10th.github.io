@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.2;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    color: #2c3e50;
+    border-left: 4px solid #3498db;
+    padding-left: 10px;
+}
+
+.education-item, .publication-item, .teaching-item {
+    margin: 15px 0;
+    padding: 10px;
+    border-left: 3px solid #e74c3c;
+}
+
+.date {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.skills {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    display: inline-block;
+    background-color: #ecf0f1;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.publication-item:hover {
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+.teaching-item {
+    margin: 15px 0;
+    padding: 10px;
+    border-left: 3px solid #3498db;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.teaching-item h3 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.teaching-item .role {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.teaching-item .location {
+    color: #555;
+    font-size:0.9em;
+}
