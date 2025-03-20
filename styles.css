@@ -1,16 +1,18 @@
+/* 整体布局设置 */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.2;
-    max-width: 1000px;
+    max-width: 1000px;         /* 限制内容最大宽度为 1000px，居中 */
     margin: 0 auto;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5; /* 页面背景色 */
 }
 
+/* 头部区域样式 */
 .header {
     text-align: left;
     margin-bottom: 30px;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #333; /* 底部分割线 */
     padding-bottom: 20px;
 }
 
@@ -19,74 +21,94 @@ body {
     font-size: 2.5em;
 }
 
+/* 头部容器，用 Flex 布局实现左文右图或多元素平铺 */
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .header-text {
+    flex-wrap: wrap;  /* 在视口变窄时换行 */
+}
+
+.header-text {
     flex: 1;
-    /* 根据需要调整右侧边距 */
-    margin-right: 20px;
-  }
-  
-  .header-photo img {
+    margin-right: 20px; /* 与右侧图片或其它元素保持一些空隙 */
+}
+
+.header-photo img {
     max-width: 200px;
     height: auto;
-    border-radius: 77%;
-  }
+    border-radius: 77%; /* 设置成圆角，数字可视需要调整 */
+}
 
+/* 联系方式样式 */
 .contact-info {
     margin-top: 10px;
 }
 
+/* 点击链接颜色与无下划线 */
 .contact-info a {
     color: #3498db;
     text-decoration: none;
 }
 
+/* 简历或主要内容块样式 */
 .section {
     background-color: #fff;
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 轻微阴影，增加层次感 */
 }
 
+/* 各个 section 的标题设置，左边一条红色分割线 */
 .section h2 {
     color: #2c3e50;
     border-left: 4px solid #e70000;
     padding-left: 10px;
 }
 
+/* 子区域标题（一个段落中的小标题） */
 .sub-section h3 {
+    /* 注意：原有两次声明合并为一次，避免属性覆盖混乱 */
     color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
-    margin-top: 20px;
+    border-bottom: 2px solid #3498db; /* 标题下方分割线 */
+    position: relative;              /* 为 ::after 伪元素定位做准备 */
+    padding-bottom: 8px;            /* 这里选择 8px，覆盖之前的 5px */
+    margin: 25px 0 15px;            /* 覆盖了之前的 margin-top: 20px */
     font-size: 1.3em;
-  }
-  
-  /* 作者加粗样式 */
-  .authors strong {
+}
+
+/* 作者名称加粗，可用于文献作者等场景 */
+.authors strong {
     font-weight: 600;
     color: #2c3e50;
-  }
+}
 
+/* 为 h3 元素添加一个自定义下划线效果 */
+.sub-section h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #3498db;
+}
+
+/* 列表项的通用样式，如教育、论文、教学、其他等 */
 .education-item,
 .publication-item,
 .teaching-item,
 .others-item {
     margin: 15px 0;
     padding: 10px;
-    border-left: 3px solid #3498db;
+    border-left: 3px solid #3498db; /* 左侧竖线做区分 */
     border-radius: 5px;
     background-color: #f9f9f9;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* 鼠标悬停时平移效果 */
 }
 
+/* 悬停时平移，增加交互感 */
 .education-item:hover,
 .publication-item:hover,
 .teaching-item:hover,
@@ -94,17 +116,19 @@ body {
     transform: translateX(10px);
 }
 
+/* 日期样式，倾斜与灰色 */
 .date {
     color: #7f8c8d;
     font-style: italic;
 }
 
-
+/* 技能列表样式，去掉默认的列表符号 */
 .skills {
     list-style-type: none;
     padding: 0;
 }
 
+/* 技能标签小块样式 */
 .skills li {
     display: inline-block;
     background-color: #ecf0f1;
@@ -113,7 +137,7 @@ body {
     border-radius: 20px;
 }
 
-
+/* 教学项中标题、角色和地点的样式 */
 .teaching-item h3 {
     color: #2c3e50;
     margin-bottom: 5px;
