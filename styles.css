@@ -19,6 +19,25 @@ body {
     font-size: 2.5em;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    /* 根据需要调整右侧边距 */
+    margin-right: 20px;
+  }
+  
+  .header-photo img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 77%;
+  }
+
 .contact-info {
     margin-top: 10px;
 }
@@ -29,7 +48,7 @@ body {
 }
 
 .section {
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
@@ -42,16 +61,30 @@ body {
     padding-left: 10px;
 }
 
-.education-item, .publication-item, .teaching-item {
+.education-item,
+.publication-item,
+.teaching-item,
+.others-item {
     margin: 15px 0;
     padding: 10px;
-    border-left: 3px solid #e74c3c;
+    border-left: 3px solid #3498db;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover,
+.publication-item:hover,
+.teaching-item:hover,
+.others-item:hover {
+    transform: translateX(10px);
 }
 
 .date {
     color: #7f8c8d;
     font-style: italic;
 }
+
 
 .skills {
     list-style-type: none;
@@ -66,23 +99,6 @@ body {
     border-radius: 20px;
 }
 
-.publication-item:hover {
-    transform: translateX(10px);
-    transition: transform 0.3s ease;
-}
-
-.education-item:hover {
-    transform: translateX(10px);
-    transition: transform 0.3s ease;
-}
-
-.teaching-item {
-    margin: 15px 0;
-    padding: 10px;
-    border-left: 3px solid #3498db;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-}
 
 .teaching-item h3 {
     color: #2c3e50;
@@ -97,5 +113,5 @@ body {
 
 .teaching-item .location {
     color: #555;
-    font-size:0.9em;
+    font-size: 0.9em;
 }
