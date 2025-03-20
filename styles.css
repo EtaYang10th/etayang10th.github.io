@@ -61,6 +61,20 @@ body {
     padding-left: 10px;
 }
 
+.sub-section h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    font-size: 1.3em;
+  }
+  
+  /* 作者加粗样式 */
+  .authors strong {
+    font-weight: 600;
+    color: #2c3e50;
+  }
+
 .education-item,
 .publication-item,
 .teaching-item,
