@@ -1,7 +1,7 @@
 /* 整体布局设置 */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.2;
+    line-height: 1.0;
     max-width: 1000px;         /* 限制内容最大宽度为 1000px，居中 */
     margin: 0 auto;
     padding: 20px;
