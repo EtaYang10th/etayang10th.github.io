@@ -63,6 +63,7 @@ body{
     border-radius:4px;
     background:#f9f9f9;
     transition:transform .3s;
+    font-size:0.9em;
 }
 .education-item:hover,
 .publication-item:hover,
