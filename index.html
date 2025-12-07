@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="header-photo">
-            <img src="photo.jpg" alt="Yang Zhou">
+            <img src="images/photo.jpg" alt="Yang Zhou">
         </div>
     </div>
 </header>
@@ -33,39 +33,240 @@
 <!-- ====== Navigation ====== -->
 <nav>
     <ul class="nav-tabs">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Personal Profile</a></li>
-        <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="others.html">Others</a></li>
+        <li class="nav-item"><a class="nav-link" href="#profile">Personal Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#others">Others</a></li>
     </ul>
 </nav>
 
 <!-- ====== Content Area ====== -->
 <main id="content-area">
-    <section class="section">
-        <h2>Education</h2>
-        <div class="item education-item">
-            <h3>Rutgers University</h3>
-            <p class="date">September 2023 – Present</p>
-            <p>Ph.D. in Computer Science</p>
-            <p>Specialization: Large Language Models, Computer Vision</p>
+    
+    <!-- Personal Profile -->
+    <section id="profile" class="section">
+        <h2>Biography</h2>
+        <div class="bio-content">
+            <p>
+                I am a Ph.D. student in the Department of Computer Science at Rutgers University, supervised by Prof. 
+                <a href="https://people.cs.rutgers.edu/~dnm/" target="_blank">Dimitris N. Metaxas</a>. 
+                Before that, I obtained my M.S. degree in Control Science and Engineering from the University of Science and Technology of China.
+            </p>
+            <p>
+                My current research interests include <strong>Multimodal Large Language Models (MLLMs)</strong>, 
+                <strong>Large Language Models (LLMs)</strong>, <strong>Multi-Agent Systems</strong>, and <strong>Test-Time Scaling</strong>.
+            </p>
         </div>
-        <div class="item education-item">
-            <h3>University of Science and Technology of China</h3>
-            <p class="date">September 2020 – June 2023</p>
-            <p>Master of Engineering, Control Science and Engineering</p>
-            <p>Specialization: Computer Vision, Object Detection, CNN Architecture</p>
-            <p class="note">(Top-Notch Class)</p>
+
+        <h2 style="margin-top: 40px;">Education</h2>
+        <div class="item education-item has-logo">
+            <div class="item-logo">
+                <img src="images/Rutgers_logo.png" alt="Rutgers Logo">
+            </div>
+            <div class="item-content">
+                <h3>Rutgers University</h3>
+                <p class="date">September 2023 – Present</p>
+                <p>Ph.D. in Computer Science</p>
+                <p>Specialization: Large Language Models, Computer Vision</p>
+            </div>
         </div>
-        <div class="item education-item">
-            <h3>Southwest University</h3>
-            <p class="date">September 2016 – June 2020</p>
-            <p>Bachelor of Engineering, Automation</p>
-            <p>Specialization: Signals &amp; Systems</p>
-            <p>Overall GPA: 4.0, Weighted average score: 88.53</p>
+        <div class="item education-item has-logo">
+            <div class="item-logo">
+                <img src="images/USTC_logo.png" alt="USTC Logo">
+            </div>
+            <div class="item-content">
+                <h3>University of Science and Technology of China</h3>
+                <p class="date">September 2020 – June 2023</p>
+                <p>Master of Engineering, Control Science and Engineering</p>
+                <p>Specialization: Computer Vision, Object Detection, CNN Architecture</p>
+            </div>
+        </div>
+        <div class="item education-item has-logo">
+            <div class="item-logo">
+                <img src="images/Southwest_University_logo.png" alt="Southwest University Logo">
+            </div>
+            <div class="item-content">
+                <h3>Southwest University</h3>
+                <p class="date">September 2016 – June 2020</p>
+                <p>Bachelor of Engineering, Automation</p>
+                <p>Specialization: Signals &amp; Systems</p>
+            </div>
         </div>
     </section>
+
+    <!-- Publications -->
+    <section id="publications" class="section">
+        <h2>Publications <span id="citation-count"></span></h2>
+        
+        <!-- MLLM, LLM, MCP & Multi-Agent -->
+        <div class="sub-section">
+            <h3>MLLM, LLM, MCP &amp; Multi-Agent</h3>
+            <div class="item publication-item">
+                <h3><a href="https://arxiv.org/abs/2511.17729">M3-Bench: Multi-Modal, Multi-Hop, Multi-Threaded Tool-Using MLLM Agent Benchmark</a></h3>
+                <p class="authors"><strong>Yang Zhou</strong>, Mingyu Zhao, Zhenting Wang, Difei Gu, Bangwei Guo, Ruosong Ye, Ligong Han, Can Jin, Dimitris N. Metaxas</p>
+                <p class="venue">(arXiv, Submitted on 21 Nov 2025)</p>
+            </div>
+            <div class="item publication-item">
+                <h3><a href="https://arxiv.org/abs/2503.13794">LED: LLM Enhanced Open-Vocabulary Object Detection without Human Curated Data Generation</a></h3>
+                <p class="authors"><strong>Yang Zhou</strong>, Shiyu Zhao, Yuxiao Chen, Zhengting Wang, Dimitris N. Metaxas</p>
+                <p class="venue">(arXiv, OpenReview Submitted)</p>
+            </div>
+            <div class="item publication-item">
+                <h3><a href="https://arxiv.org/pdf/2504.09772">Your Reward Function for RL is Your Best PRM for Search: Unifying RL and Search-Based TTS</a></h3>
+                <p class="authors">Can Jin, <strong>Yang Zhou</strong>, Qixin Zhang, Hongwu Peng, Di Zhang, Marco Pavone, Ligong Han, Zhang‑Wei Hong, Tong Che, Dimitris N. Metaxas</p>
+                <p class="venue">(arXiv, OpenReview Submitted)</p>
+            </div>
+        </div>
+
+        <!-- Computer Vision -->
+        <div class="sub-section">
+            <h3>Computer Vision</h3>
+            <div class="item publication-item">
+                <h3><a href="https://aclanthology.org/2024.signlang-1.45/">A Multimodal Spatio‑Temporal GCN Model with Enhancements for Isolated Sign Recognition</a></h3>
+                <p class="authors"><strong>Yang Zhou</strong>, Zhaoyang Xia, Yuxiao Chen, Carol Neidle, Dimitris N. Metaxas</p>
+                <p class="venue">(LREC‑COLING 2024)</p>
+            </div>
+            <div class="item publication-item">
+                <h3><a href="https://link.springer.com/article/10.1007/s10462-022-10213-5">A Review of Convolutional Neural Network Architectures and Their Optimizations</a></h3>
+                <p class="authors">Shuang Cong, <strong>Yang Zhou</strong></p>
+                <p class="venue">(Artificial Intelligence Review, IF 9.588/Q1)</p>
+            </div>
+            <div class="item publication-item">
+                <h3><a href="https://aclanthology.org/2024.signlang-1.44/">Diffusion Models for Sign Language Video Anonymization</a></h3>
+                <p class="authors">Zhaoyang Xia, <strong>Yang Zhou</strong>, Ligong Han, Carol Neidle, Dimitris N. Metaxas</p>
+                <p class="venue">(LREC‑COLING 2024)</p>
+            </div>
+        </div>
+
+        <!-- Previous Work (Collapsible on Hover) -->
+        <div class="previous-work-container">
+            <div class="previous-work-title">Previous Work</div>
+            <div class="previous-work-content">
+                <!-- Modeling & Data Analysis -->
+                <div class="sub-section">
+                    <h3>Modeling &amp; Data Analysis</h3>
+                    <div class="item publication-item">
+                        <h3><a href="https://onlinelibrary.wiley.com/doi/epdf/10.1155/2019/6585102">A Multistory Building Evacuation Model Based on Multiple‑Factor Analysis</a></h3>
+                        <p class="authors"><strong>Yang Zhou</strong>, Zichuan Fan</p>
+                        <p class="venue">(Advances in Civil Engineering, IF 1.924/Q3)</p>
+                    </div>
+                </div>
+    
+                <!-- Signals & Systems -->
+                <div class="sub-section">
+                    <h3>Signals &amp; Systems</h3>
+                    <div class="item publication-item">
+                        <h3><a href="https://www.sciencedirect.com/science/article/pii/S0263224120314317">The Excitation and Detection of Lamb Waves in a Droplet‑Loaded Plate Using Air‑Coupled Ultrasonic Transducers</a></h3>
+                        <p class="authors">Zichuan Fan, <strong>Yang Zhou</strong>, Tanghong Wu</p>
+                        <p class="venue">(Measurement, IF 5.131/Q1)</p>
+                    </div>
+                    <div class="item publication-item">
+                        <h3><a href="https://www.sciencedirect.com/science/article/pii/S0263224119307924">Quasi‑Dispersion of Air‑Coupled Ultrasonic Signal for Angle‑Dependent Reception</a></h3>
+                        <p class="authors">Zichuan Fan, <strong>Yang Zhou</strong>, Tianhao Qie</p>
+                        <p class="venue">(Measurement, IF 5.131/Q1)</p>
+                    </div>
+                    <div class="item publication-item">
+                        <h3><a href="https://ieeexplore.ieee.org/document/8813503">Multiphysics Model of Lamb Waves Propagation in a Plate Loaded with Droplets</a></h3>
+                        <p class="authors"><strong>Yang Zhou</strong>, Zichuan Fan</p>
+                        <p class="venue">(ICCAR 2019, IEEE)</p>
+                    </div>
+                    <div class="item publication-item">
+                        <h3><a href="https://www.sciencedirect.com/science/article/pii/S0263224119303094">Multiple Reflective Signal Reception in Gas Flow Measurement Using Air‑Coupled Leaky Lamb Waves</a></h3>
+                        <p class="authors">Zichuan Fan, Tianhao Qie, <strong>Yang Zhou</strong></p>
+                        <p class="venue">(Measurement, IF 5.131/Q1)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+        <h2>Teaching &amp; Talks</h2>
+        <div class="item teaching-item has-logo">
+            <div class="item-logo">
+                <img src="images/Rutgers_logo.png" alt="Rutgers Logo">
+            </div>
+            <div class="item-content">
+                <h3>Computer Security</h3>
+                <p class="role">Teaching Assistant, Rutgers University (Spring 2025)</p>
+                <p class="location">New Jersey, USA</p>
+            </div>
+        </div>
+        <div class="item teaching-item has-logo">
+            <div class="item-logo">
+                <img src="images/Rutgers_logo.png" alt="Rutgers Logo">
+            </div>
+            <div class="item-content">
+                <h3>Systems Programming</h3>
+                <p class="role">Teaching Assistant, Rutgers University (Fall 2023, Spring 2024)</p>
+                <p class="location">New Jersey, USA</p>
+            </div>
+        </div>
+        <div class="item teaching-item has-logo">
+            <div class="item-logo">
+                <img src="images/USTC_logo.png" alt="USTC Logo">
+            </div>
+            <div class="item-content">
+                <h3>Neural Networks and Deep Learning</h3>
+                <p class="role">Teaching Assistant, University of Science and Technology of China (Aug 2021)</p>
+                <p class="location">Hefei, Anhui, China</p>
+            </div>
+        </div>
+        <div class="item teaching-item">
+            <h3>Characteristics of Lamb Waves and Their Leakage Waves</h3>
+            <p class="role">Presenter, ICCAR International Academic Conference (May 2019)</p>
+            <p class="location">Beijing, China</p>
+        </div>
+    </section>
+
+    <!-- Others (Skills) -->
+    <section id="others" class="section">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li><strong>Operating Systems:</strong> Windows, Linux</li>
+            <li><strong>Programming:</strong> Python (primary), C++, Java</li>
+            <li><strong>Tools:</strong> Office Suite, MATLAB</li>
+        </ul>
+    </section>
+
+    <!-- Others (More) -->
+    <section class="section">
+        <h2>Others</h2>
+        <div class="item others-item"><h3>2019 Invention Patents (China)</h3></div>
+        <div class="item others-item"><h3>2019 Utility Model Patent (China)</h3></div>
+        <div class="item others-item"><h3>2019 Mathematical Contest in Modeling (COMAP) — Meritorious Winner</h3></div>
+    </section>
+
 </main>
+
+<script>
+    // Citation Logic
+    async function loadCitationCount() {
+      const span = document.getElementById('citation-count');
+      if (!span) return;
+      if (span.innerHTML !== "") return; // Prevent re-fetching
+
+      try {
+        const target = 'https://scholar.google.com/citations?user=BsQ8IUcAAAAJ&hl=en';
+        const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(target);
+        const res = await fetch(proxyUrl);
+        if (!res.ok) throw new Error(res.statusText);
+        const html = await res.text();
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        const cell = doc.querySelector('#gsc_rsb_st tbody tr:nth-child(1) td:nth-child(2)');
+        if (cell) {
+          const count = cell.textContent.trim();
+          span.innerHTML = `<a href="${target}" target="_blank" rel="noopener">Citations: ${count}</a>`;
+        }
+      } catch (err) {
+        console.error('Citation fetch error:', err);
+      }
+    }
+    
+    // Run on load
+    document.addEventListener('DOMContentLoaded', loadCitationCount);
+</script>
 
 </body>
 </html>
