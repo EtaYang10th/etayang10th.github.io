@@ -3,117 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yang Zhou - CV</title>
+    <meta name="description" content="Yang Zhou's academic homepage featuring research, publications, teaching, and honors.">
+    <title>Yang Zhou | Homepage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- ====== Header ====== -->
-<header class="header">
-    <div class="header-container">
-        <div class="header-text">
+<header class="hero">
+    <div class="hero-container">
+        <div class="hero-text">
+            <p class="hero-eyebrow">Ph.D. Student · Rutgers University</p>
             <h1>Yang Zhou</h1>
-            <h2>Ph.D. Student, Rutgers University – Department of Computer Science</h2>
-            <div class="contact-info">
-                <p>📞 +1 732 558 9675 | 📧 <a href="mailto:eta.yang@rutgers.edu">eta.yang@rutgers.edu</a></p>
-                <p class="contact-links">
-                    🔗
-                    <a href="https://www.linkedin.com/in/yang-zhou-0b6a78293/" target="_blank">LinkedIn</a> |
-                    <a href="https://scholar.google.com/citations?user=BsQ8IUcAAAAJ&hl=en" target="_blank">Google Scholar</a> |
-                    <a href="https://huggingface.co/EtaYang10th" target="_blank">Hugging Face</a> |
-                    <a href="https://github.com/EtaYang10th" target="_blank">GitHub</a>
-                </p>
+            <p class="hero-subtitle">Researching multimodal foundation models, tool-using agents, and test-time scaling.</p>
+            <p class="hero-description">
+                I am a third-year Ph.D. student in the Department of Computer Science at Rutgers University, supervised by
+                Prof. <a href="https://people.cs.rutgers.edu/~dnm/" target="_blank" rel="noopener">Dimitris N. Metaxas</a>
+                in the <a href="https://cbim-rutgers.github.io/" target="_blank" rel="noopener">Center for Computational Biomedicine Imaging and Modeling</a>.
+                Before that, I obtained my M.S. degree in Control Science and Engineering from the University of Science and Technology of China.
+            </p>
+            <div class="hero-tags">
+                <span class="hero-tag">Multimodal LLMs</span>
+                <span class="hero-tag">Tool-Using Agents</span>
+                <span class="hero-tag">Test-Time Scaling</span>
+                <span class="hero-tag">Computer Vision</span>
+            </div>
+            <div class="hero-actions">
+                <a class="action-button primary" href="mailto:eta.yang@rutgers.edu">Email</a>
+                <a class="action-button" href="https://scholar.google.com/citations?user=BsQ8IUcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+                <a class="action-button" href="https://github.com/EtaYang10th" target="_blank" rel="noopener">GitHub</a>
+                <a class="action-button" href="https://huggingface.co/EtaYang10th" target="_blank" rel="noopener">Hugging Face</a>
+                <a class="action-button" href="https://www.linkedin.com/in/yang-zhou-0b6a78293/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="action-button" href="latex/cv.pdf" target="_blank" rel="noopener">CV PDF</a>
             </div>
         </div>
-        <div class="header-photo">
-            <img src="images/photo.jpg" alt="Yang Zhou">
+        <div class="hero-side">
+            <div class="hero-photo">
+                <img src="images/photo.jpg" alt="Yang Zhou">
+            </div>
+            <div class="hero-mini-stats">
+                <div class="mini-stat">
+                    <span class="mini-stat-label">Google Scholar Citations</span>
+                    <strong id="hero-citation-count">Loading...</strong>
+                </div>
+            </div>
         </div>
     </div>
 </header>
 
-<!-- ====== Navigation ====== -->
-<nav>
+<nav class="site-nav">
     <ul class="nav-tabs">
-        <li class="nav-item"><a class="nav-link" href="#profile">Personal Profile</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#profile">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#others">Others</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Teaching &amp; Talks</a></li>
+        <li class="nav-item"><a class="nav-link" href="#others">Skills &amp; Honors</a></li>
     </ul>
 </nav>
 
-<!-- ====== Content Area ====== -->
 <main id="content-area">
-    
-    <!-- Personal Profile -->
     <section id="profile" class="section">
-        <h2>Biography</h2>
-        <div class="bio-content">
-            <p>
-                I am a third-year Ph.D. student in the Department of Computer Science at Rutgers University, supervised by Prof. 
-                <a href="https://people.cs.rutgers.edu/~dnm/" target="_blank">Dimitris N. Metaxas</a> in the <a href="https://cbim-rutgers.github.io/" target="_blank">Center for Computational Biomedicine Imaging and Modeling</a>. 
-                Before that, I obtained my M.S. degree in Control Science and Engineering from the University of Science and Technology of China.
-            </p>
-            <p>
-                My current research interests include <strong>Multimodal Large Language Models (MLLMs)</strong>, 
-                <strong>Large Language Models (LLMs)</strong>, <strong>Multi-Agent Systems</strong>, and <strong>Test-Time Scaling</strong>.
-            </p>
+        <div class="section-heading">
+            <div>
+                <h2>About</h2>
+                <p class="section-lead">A concise overview of my current research, academic background, and training.</p>
+            </div>
         </div>
 
-        <h2 style="margin-top: 40px;">Education</h2>
-        <div class="item education-item has-logo">
-            <div class="item-logo">
-                <img src="images/Rutgers_logo.png" alt="Rutgers Logo">
+        <div class="about-grid">
+            <div class="panel">
+                <h3 class="panel-title">Biography</h3>
+                <div class="bio-content">
+                    <p>
+                        I work on <strong>multimodal large language models</strong>, <strong>large language models</strong>,
+                        <strong>multi-agent systems</strong>, and <strong>test-time scaling</strong>, with a broader interest in
+                        building more capable and reliable AI systems.
+                    </p>
+                    <p>
+                        My recent projects span open-vocabulary detection, tool-using multimodal agents, reasoning evaluation,
+                        and reinforcement learning for search-based inference.
+                    </p>
+                    <p>
+                        I am especially interested in research that connects strong empirical performance with practical usability,
+                        interpretability, and real-world deployment.
+                    </p>
+                </div>
             </div>
-            <div class="item-content">
-                <h3>Rutgers University</h3>
-                <p class="date">September 2023 – Present</p>
-                <p>Ph.D. in Computer Science</p>
-                <p>Specialization: Large Language Models, Computer Vision</p>
-            </div>
-        </div>
-        <div class="item education-item has-logo">
-            <div class="item-logo">
-                <img src="images/USTC_logo.png" alt="USTC Logo">
-            </div>
-            <div class="item-content">
-                <h3>University of Science and Technology of China</h3>
-                <p class="date">September 2020 – June 2023</p>
-                <p>Master of Engineering, Control Science and Engineering</p>
-                <p>Specialization: Computer Vision, Object Detection, CNN Architecture</p>
-            </div>
-        </div>
-        <div class="item education-item has-logo">
-            <div class="item-logo">
-                <img src="images/Southwest_University_logo.png" alt="Southwest University Logo">
-            </div>
-            <div class="item-content">
-                <h3>Southwest University</h3>
-                <p class="date">September 2016 – June 2020</p>
-                <p>Bachelor of Engineering, Automation</p>
-                <p>Specialization: Signals &amp; Systems</p>
+
+            <div class="panel">
+                <h3 class="panel-title">Education</h3>
+                <div class="education-list">
+                    <div class="item education-item has-logo">
+                        <div class="item-logo">
+                            <img src="images/Rutgers_logo.png" alt="Rutgers Logo">
+                        </div>
+                        <div class="item-content">
+                            <h3>Rutgers University</h3>
+                            <p class="date">September 2023 – Present</p>
+                            <p>Ph.D. in Computer Science</p>
+                            <p>Specialization: Large Language Models, Computer Vision</p>
+                        </div>
+                    </div>
+                    <div class="item education-item has-logo">
+                        <div class="item-logo">
+                            <img src="images/USTC_logo.png" alt="USTC Logo">
+                        </div>
+                        <div class="item-content">
+                            <h3>University of Science and Technology of China</h3>
+                            <p class="date">September 2020 – June 2023</p>
+                            <p>Master of Engineering, Control Science and Engineering</p>
+                            <p>Specialization: Computer Vision, Object Detection, CNN Architecture</p>
+                        </div>
+                    </div>
+                    <div class="item education-item has-logo">
+                        <div class="item-logo">
+                            <img src="images/Southwest_University_logo.png" alt="Southwest University Logo">
+                        </div>
+                        <div class="item-content">
+                            <h3>Southwest University</h3>
+                            <p class="date">September 2016 – June 2020</p>
+                            <p>Bachelor of Engineering, Automation</p>
+                            <p>Specialization: Signals &amp; Systems</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Publications -->
     <section id="publications" class="section">
-        <h2>Publications <span id="citation-count"></span></h2>
-        
-        <!-- MLLM & LLM -->
+        <div class="section-heading">
+            <div>
+                <h2>Publications</h2>
+                <p class="section-lead">Selected publications in multimodal language modeling, agents, reinforcement learning, and computer vision.</p>
+            </div>
+            <div id="citation-count" aria-live="polite"></div>
+        </div>
+
+        <div class="featured-grid">
+            <article class="featured-paper">
+                <p class="featured-paper-kicker">Featured Paper</p>
+                <h3><a href="https://arxiv.org/abs/2503.13794">LED: LLM Enhanced Open-Vocabulary Object Detection without Human Curated Data Generation</a></h3>
+                <p class="authors"><strong>Yang Zhou</strong>, Shiyu Zhao, Yuxiao Chen, Zhengting Wang, Can Jin, Dimitris N. Metaxas</p>
+                <div class="featured-meta">
+                    <span class="badge badge-solid">CVPR 2026</span>
+                    <a class="paper-link" href="https://arxiv.org/abs/2503.13794">Paper</a>
+                </div>
+            </article>
+            <article class="featured-paper">
+                <p class="featured-paper-kicker">Featured Paper</p>
+                <h3><a href="https://arxiv.org/abs/2511.17729">M3-Bench: Multi-Modal, Multi-Hop, Multi-Threaded Tool-Using MLLM Agent Benchmark</a></h3>
+                <p class="authors"><strong>Yang Zhou</strong>, Mingyu Zhao, Zhenting Wang, Difei Gu, Bangwei Guo, Ruosong Ye, Ligong Han, Can Jin, Dimitris N. Metaxas</p>
+                <div class="featured-meta">
+                    <span class="badge badge-muted">arXiv 2025</span>
+                    <a class="paper-link" href="https://arxiv.org/abs/2511.17729">Paper</a>
+                </div>
+            </article>
+        </div>
+
         <div class="sub-section">
             <h3>MLLM &amp; LLM</h3>
             <div class="item publication-item">
                 <h3><a href="https://arxiv.org/abs/2602.03061">Evaluating LLMs When They Do Not Know the Answer: Statistical Evaluation of Mathematical Reasoning via Comparative Signals</a></h3>
                 <p class="authors">Zihan Dong, Zhixian Zhang, <strong>Yang Zhou</strong>, Can Jin, Ruijia Wu, Linjun Zhang</p>
-                <p class="venue">(arXiv, 2026) <span class="badge">ICML 2026 Submit</span></p>
+                <p class="venue">(arXiv, 2026) <span class="badge badge-outline">ICML 2026 Submit</span></p>
             </div>
             <div class="item publication-item">
                 <h3><a href="https://arxiv.org/abs/2503.13794">LED: LLM Enhanced Open-Vocabulary Object Detection without Human Curated Data Generation</a></h3>
                 <p class="authors"><strong>Yang Zhou</strong>, Shiyu Zhao, Yuxiao Chen, Zhengting Wang, Can Jin, Dimitris N. Metaxas</p>
-                <p class="venue">(arXiv, 2025)</p>
+                <p class="venue">(CVPR 2026)</p>
             </div>
         </div>
 
-        <!-- Multi-Agent -->
         <div class="sub-section">
             <h3>Multi-Agent</h3>
             <div class="item publication-item">
@@ -124,17 +182,16 @@
             <div class="item publication-item">
                 <h3>CAMEL: A Framework for Finding the Scaling Laws of Agents</h3>
                 <p class="authors">Ziyi Yang, ... <strong>Yang Zhou</strong>, ...</p>
-                <p class="venue"><span class="badge">ICML 2026 Submit</span></p>
+                <p class="venue"><span class="badge badge-outline">ICML 2026 Submit</span></p>
             </div>
         </div>
 
-        <!-- RL -->
         <div class="sub-section">
             <h3>RL</h3>
             <div class="item publication-item">
                 <h3>AIRL-S: Unifying Reinforcement Learning and Search-Based Test-Time Scaling via Adversarial Inverse Reinforcement Learning</h3>
                 <p class="authors">Can Jin, <strong>Yang Zhou</strong>, Qixin Zhang, Hongwu Peng, Di Zhang, Zihan Dong, Marco Pavone, Ligong Han, Zhang-Wei Hong, Tong Che, Dimitris N. Metaxas</p>
-                <p class="venue"><span class="badge">ICML 2026 Submit</span></p>
+                <p class="venue"><span class="badge badge-outline">ICML 2026 Submit</span></p>
             </div>
             <div class="item publication-item">
                 <h3><a href="https://arxiv.org/abs/2508.14313">Your Reward Function for RL is Your Best PRM for Search: Unifying RL and Search-Based TTS</a></h3>
@@ -143,7 +200,6 @@
             </div>
         </div>
 
-        <!-- Computer Vision & Medical Imaging -->
         <div class="sub-section">
             <h3>Computer Vision &amp; Medical Imaging</h3>
             <div class="item publication-item">
@@ -152,28 +208,31 @@
                 <p class="venue">(MICCAI 2025)</p>
             </div>
             <div class="item publication-item">
-                <h3><a href="https://aclanthology.org/2024.signlang-1.45/">A Multimodal Spatio‑Temporal GCN Model with Enhancements for Isolated Sign Recognition</a></h3>
+                <h3><a href="https://aclanthology.org/2024.signlang-1.45/">A Multimodal Spatio-Temporal GCN Model with Enhancements for Isolated Sign Recognition</a></h3>
                 <p class="authors"><strong>Yang Zhou</strong>, Zhaoyang Xia, Yuxiao Chen, Carol Neidle, Dimitris N. Metaxas</p>
-                <p class="venue">(LREC‑COLING 2024)</p>
+                <p class="venue">(LREC-COLING 2024)</p>
             </div>
             <div class="item publication-item">
                 <h3><a href="https://link.springer.com/article/10.1007/s10462-022-10213-5">A Review of Convolutional Neural Network Architectures and Their Optimizations</a></h3>
                 <p class="authors">Shuang Cong, <strong>Yang Zhou</strong></p>
-                <p class="venue">(Artificial Intelligence Review, IF 9.588/Q1)</p>
+                <p class="venue">(Artificial Intelligence Review, IF 9.588/Q1)</p>
             </div>
             <div class="item publication-item">
                 <h3><a href="https://aclanthology.org/2024.signlang-1.44/">Diffusion Models for Sign Language Video Anonymization</a></h3>
                 <p class="authors">Zhaoyang Xia, <strong>Yang Zhou</strong>, Ligong Han, Carol Neidle, Dimitris N. Metaxas</p>
-                <p class="venue">(LREC‑COLING 2024)</p>
+                <p class="venue">(LREC-COLING 2024)</p>
             </div>
-            <!-- Others Work (Collapsible on Hover) -->
-            <div class="previous-work-container">
-                <div class="previous-work-title others-work-title">Others Work</div>
-                <div class="previous-work-content">
+
+            <details class="collapsible-panel">
+                <summary class="collapsible-summary">
+                    <span>Other Collaborative Work</span>
+                    <span class="collapsible-meta">2 papers</span>
+                </summary>
+                <div class="collapsible-content">
                     <div class="item publication-item">
                         <h3><a href="https://arxiv.org/abs/2602.07311">LUCID-SAE: Learning Unified Vision-Language Sparse Codes for Interpretable Concept Discovery</a></h3>
                         <p class="authors">Difei Gu, Yunhe Gao, Gerasimos Chatzoudis, Zihan Dong, Guoning Zhang, Bangwei Guo, <strong>Yang Zhou</strong>, Mu Zhou, Dimitris N. Metaxas</p>
-                        <p class="venue">(arXiv, 2026) <span class="badge">ICML 2026 Submit</span></p>
+                        <p class="venue">(arXiv, 2026) <span class="badge badge-outline">ICML 2026 Submit</span></p>
                     </div>
                     <div class="item publication-item">
                         <h3><a href="https://arxiv.org/abs/2509.25594">K-Prism: A Knowledge-Guided and Prompt Integrated Universal Medical Image Segmentation Model</a></h3>
@@ -181,138 +240,248 @@
                         <p class="venue">(arXiv, 2025)</p>
                     </div>
                 </div>
-            </div>
+            </details>
         </div>
 
-        <!-- Previous Work (Collapsible on Hover) -->
-        <div class="previous-work-container">
-            <div class="previous-work-title">Previous Work</div>
-            <div class="previous-work-content">
-                <!-- Modeling & Data Analysis -->
+        <details class="collapsible-panel">
+            <summary class="collapsible-summary">
+                <span>Earlier Work</span>
+                <span class="collapsible-meta">5 papers</span>
+            </summary>
+            <div class="collapsible-content">
                 <div class="sub-section">
-                    <h3>Modeling &amp; Data Analysis</h3>
+                    <h3>Modeling &amp; Data Analysis</h3>
                     <div class="item publication-item">
-                        <h3><a href="https://onlinelibrary.wiley.com/doi/epdf/10.1155/2019/6585102">A Multistory Building Evacuation Model Based on Multiple‑Factor Analysis</a></h3>
+                        <h3><a href="https://onlinelibrary.wiley.com/doi/epdf/10.1155/2019/6585102">A Multistory Building Evacuation Model Based on Multiple-Factor Analysis</a></h3>
                         <p class="authors"><strong>Yang Zhou</strong>, Zichuan Fan</p>
-                        <p class="venue">(Advances in Civil Engineering, IF 1.924/Q3)</p>
+                        <p class="venue">(Advances in Civil Engineering, IF 1.924/Q3)</p>
                     </div>
                 </div>
-    
-                <!-- Signals & Systems -->
+
                 <div class="sub-section">
-                    <h3>Signals &amp; Systems</h3>
+                    <h3>Signals &amp; Systems</h3>
                     <div class="item publication-item">
-                        <h3><a href="https://www.sciencedirect.com/science/article/pii/S0263224120314317">The Excitation and Detection of Lamb Waves in a Droplet‑Loaded Plate Using Air‑Coupled Ultrasonic Transducers</a></h3>
+                        <h3><a href="https://www.sciencedirect.com/science/article/pii/S0263224120314317">The Excitation and Detection of Lamb Waves in a Droplet-Loaded Plate Using Air-Coupled Ultrasonic Transducers</a></h3>
                         <p class="authors">Zichuan Fan, <strong>Yang Zhou</strong>, Tanghong Wu</p>
-                        <p class="venue">(Measurement, IF 5.131/Q1)</p>
+                        <p class="venue">(Measurement, IF 5.131/Q1)</p>
                     </div>
                     <div class="item publication-item">
-                        <h3><a href="https://www.sciencedirect.com/science/article/pii/S0263224119307924">Quasi‑Dispersion of Air‑Coupled Ultrasonic Signal for Angle‑Dependent Reception</a></h3>
+                        <h3><a href="https://www.sciencedirect.com/science/article/pii/S0263224119307924">Quasi-Dispersion of Air-Coupled Ultrasonic Signal for Angle-Dependent Reception</a></h3>
                         <p class="authors">Zichuan Fan, <strong>Yang Zhou</strong>, Tianhao Qie</p>
-                        <p class="venue">(Measurement, IF 5.131/Q1)</p>
+                        <p class="venue">(Measurement, IF 5.131/Q1)</p>
                     </div>
                     <div class="item publication-item">
                         <h3><a href="https://ieeexplore.ieee.org/document/8813503">Multiphysics Model of Lamb Waves Propagation in a Plate Loaded with Droplets</a></h3>
                         <p class="authors"><strong>Yang Zhou</strong>, Zichuan Fan</p>
-                        <p class="venue">(ICCAR 2019, IEEE)</p>
+                        <p class="venue">(ICCAR 2019, IEEE)</p>
                     </div>
                     <div class="item publication-item">
-                        <h3><a href="https://www.sciencedirect.com/science/article/pii/S0263224119303094">Multiple Reflective Signal Reception in Gas Flow Measurement Using Air‑Coupled Leaky Lamb Waves</a></h3>
+                        <h3><a href="https://www.sciencedirect.com/science/article/pii/S0263224119303094">Multiple Reflective Signal Reception in Gas Flow Measurement Using Air-Coupled Leaky Lamb Waves</a></h3>
                         <p class="authors">Zichuan Fan, Tianhao Qie, <strong>Yang Zhou</strong></p>
-                        <p class="venue">(Measurement, IF 5.131/Q1)</p>
+                        <p class="venue">(Measurement, IF 5.131/Q1)</p>
                     </div>
+                </div>
+            </div>
+        </details>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="section-heading">
+            <div>
+                <h2>Teaching &amp; Talks</h2>
+                <p class="section-lead">Courses and presentations that reflect my academic service and communication experience.</p>
+            </div>
+        </div>
+
+        <div class="teaching-list">
+            <div class="item teaching-item has-logo">
+                <div class="item-logo">
+                    <img src="images/Rutgers_logo.png" alt="Rutgers Logo">
+                </div>
+                <div class="item-content">
+                    <h3>Computer Security</h3>
+                    <p class="role">Teaching Assistant, Rutgers University (Spring 2025)</p>
+                    <p class="location">New Jersey, USA</p>
+                </div>
+            </div>
+            <div class="item teaching-item has-logo">
+                <div class="item-logo">
+                    <img src="images/Rutgers_logo.png" alt="Rutgers Logo">
+                </div>
+                <div class="item-content">
+                    <h3>Systems Programming</h3>
+                    <p class="role">Teaching Assistant, Rutgers University (Fall 2023, Spring 2024)</p>
+                    <p class="location">New Jersey, USA</p>
+                </div>
+            </div>
+            <div class="item teaching-item has-logo">
+                <div class="item-logo">
+                    <img src="images/USTC_logo.png" alt="USTC Logo">
+                </div>
+                <div class="item-content">
+                    <h3>Neural Networks and Deep Learning</h3>
+                    <p class="role">Teaching Assistant, University of Science and Technology of China (Aug 2021)</p>
+                    <p class="location">Hefei, Anhui, China</p>
+                </div>
+            </div>
+            <div class="item teaching-item">
+                <div class="item-content">
+                    <h3>Characteristics of Lamb Waves and Their Leakage Waves</h3>
+                    <p class="role">Presenter, ICCAR International Academic Conference (May 2019)</p>
+                    <p class="location">Beijing, China</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" class="section">
-        <h2>Teaching &amp; Talks</h2>
-        <div class="item teaching-item has-logo">
-            <div class="item-logo">
-                <img src="images/Rutgers_logo.png" alt="Rutgers Logo">
-            </div>
-            <div class="item-content">
-                <h3>Computer Security</h3>
-                <p class="role">Teaching Assistant, Rutgers University (Spring 2025)</p>
-                <p class="location">New Jersey, USA</p>
-            </div>
-        </div>
-        <div class="item teaching-item has-logo">
-            <div class="item-logo">
-                <img src="images/Rutgers_logo.png" alt="Rutgers Logo">
-            </div>
-            <div class="item-content">
-                <h3>Systems Programming</h3>
-                <p class="role">Teaching Assistant, Rutgers University (Fall 2023, Spring 2024)</p>
-                <p class="location">New Jersey, USA</p>
-            </div>
-        </div>
-        <div class="item teaching-item has-logo">
-            <div class="item-logo">
-                <img src="images/USTC_logo.png" alt="USTC Logo">
-            </div>
-            <div class="item-content">
-                <h3>Neural Networks and Deep Learning</h3>
-                <p class="role">Teaching Assistant, University of Science and Technology of China (Aug 2021)</p>
-                <p class="location">Hefei, Anhui, China</p>
-            </div>
-        </div>
-        <div class="item teaching-item">
-            <h3>Characteristics of Lamb Waves and Their Leakage Waves</h3>
-            <p class="role">Presenter, ICCAR International Academic Conference (May 2019)</p>
-            <p class="location">Beijing, China</p>
-        </div>
-    </section>
-
-    <!-- Others (Skills) -->
     <section id="others" class="section">
-        <h2>Skills</h2>
-        <ul class="skills">
-            <li><strong>Operating Systems:</strong> Windows, Linux</li>
-            <li><strong>Programming:</strong> Python (primary), C++, Java</li>
-            <li><strong>Tools:</strong> Office Suite, MATLAB</li>
-        </ul>
-    </section>
+        <div class="section-heading">
+            <div>
+                <h2>Skills &amp; Honors</h2>
+                <p class="section-lead">Research interests, technical background, and selected honors.</p>
+            </div>
+        </div>
 
-    <!-- Others (More) -->
-    <section class="section">
-        <h2>Others</h2>
-        <div class="item others-item"><h3>2019 Invention Patents (China)</h3></div>
-        <div class="item others-item"><h3>2019 Utility Model Patent (China)</h3></div>
-        <div class="item others-item"><h3>2019 Mathematical Contest in Modeling (COMAP) — Meritorious Winner</h3></div>
-    </section>
+        <div class="skills-grid">
+            <div class="panel">
+                <h3 class="panel-title">Research &amp; Technical Areas</h3>
+                <div class="skill-groups">
+                    <div class="skill-group">
+                        <h3>Research</h3>
+                        <div class="skill-tags">
+                            <span>Multimodal LLMs</span>
+                            <span>Large Language Models</span>
+                            <span>Multi-Agent Systems</span>
+                            <span>Test-Time Scaling</span>
+                            <span>Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Programming</h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>C++</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Systems &amp; Tools</h3>
+                        <div class="skill-tags">
+                            <span>Linux</span>
+                            <span>Windows</span>
+                            <span>MATLAB</span>
+                            <span>Office Suite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="panel">
+                <h3 class="panel-title">Honors &amp; Recognition</h3>
+                <div class="award-list">
+                    <div class="award-item">
+                        <h3>2019 Invention Patents (China)</h3>
+                    </div>
+                    <div class="award-item">
+                        <h3>2019 Utility Model Patent (China)</h3>
+                    </div>
+                    <div class="award-item">
+                        <h3>2019 Mathematical Contest in Modeling (COMAP) — Meritorious Winner</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <script>
-    // Citation Logic
     async function loadCitationCount() {
-      const span = document.getElementById('citation-count');
-      if (!span) return;
-      if (span.innerHTML !== "") return; // Prevent re-fetching
-
-      try {
+        const headingCounter = document.getElementById('citation-count');
+        const heroCounter = document.getElementById('hero-citation-count');
         const target = 'https://scholar.google.com/citations?user=BsQ8IUcAAAAJ&hl=en';
-        const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(target);
-        const res = await fetch(proxyUrl);
-        if (!res.ok) throw new Error(res.statusText);
-        const html = await res.text();
-        const doc = new DOMParser().parseFromString(html, 'text/html');
-        const cell = doc.querySelector('#gsc_rsb_st tbody tr:nth-child(1) td:nth-child(2)');
-        if (cell) {
-          const count = cell.textContent.trim();
-          span.innerHTML = `<a href="${target}" target="_blank" rel="noopener">Citations: ${count}</a>`;
-        }
-      } catch (err) {
-        console.error('Citation fetch error:', err);
-      }
-    }
-    
-    // Run on load
-    document.addEventListener('DOMContentLoaded', loadCitationCount);
-</script>
 
+        if (!headingCounter && !heroCounter) {
+            return;
+        }
+
+        try {
+            const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(target);
+            const res = await fetch(proxyUrl);
+            if (!res.ok) {
+                throw new Error(res.statusText);
+            }
+
+            const html = await res.text();
+            const doc = new DOMParser().parseFromString(html, 'text/html');
+            const cell = doc.querySelector('#gsc_rsb_st tbody tr:nth-child(1) td:nth-child(2)');
+            const count = cell ? cell.textContent.trim() : '';
+
+            if (!count) {
+                throw new Error('Citation count not found');
+            }
+
+            if (headingCounter) {
+                headingCounter.innerHTML = `<a href="${target}" target="_blank" rel="noopener">Google Scholar · ${count} citations</a>`;
+            }
+            if (heroCounter) {
+                heroCounter.textContent = count;
+            }
+        } catch (error) {
+            console.error('Citation fetch error:', error);
+            if (headingCounter) {
+                headingCounter.innerHTML = `<a href="${target}" target="_blank" rel="noopener">Google Scholar</a>`;
+            }
+            if (heroCounter) {
+                heroCounter.textContent = 'Google Scholar';
+            }
+        }
+    }
+
+    function setupScrollSpy() {
+        const navLinks = Array.from(document.querySelectorAll('.nav-link'));
+        const sections = navLinks
+            .map((link) => document.querySelector(link.getAttribute('href')))
+            .filter(Boolean);
+
+        if (!navLinks.length || !sections.length) {
+            return;
+        }
+
+        const setActive = (id) => {
+            navLinks.forEach((link) => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+            });
+        };
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const visibleEntry = entries
+                    .filter((entry) => entry.isIntersecting)
+                    .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+                if (visibleEntry) {
+                    setActive(visibleEntry.target.id);
+                }
+            },
+            {
+                rootMargin: '-30% 0px -55% 0px',
+                threshold: [0.15, 0.35, 0.6],
+            }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+
+        if (window.location.hash) {
+            setActive(window.location.hash.slice(1));
+        } else {
+            setActive(sections[0].id);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        loadCitationCount();
+        setupScrollSpy();
+    });
+</script>
 </body>
 </html>
