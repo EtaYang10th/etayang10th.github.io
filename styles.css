@@ -252,6 +252,13 @@ summary:focus-visible {
     color: var(--text-primary);
 }
 
+#hero-citation-updated {
+    display: block;
+    margin-top: 6px;
+    color: var(--text-tertiary);
+    font-size: 0.82rem;
+}
+
 .site-nav {
     position: sticky;
     top: 12px;

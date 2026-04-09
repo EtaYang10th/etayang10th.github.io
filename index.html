@@ -42,7 +42,8 @@
             <div class="hero-mini-stats">
                 <div class="mini-stat">
                     <span class="mini-stat-label">Google Scholar Citations</span>
-                    <strong id="hero-citation-count">Loading...</strong>
+                    <strong id="hero-citation-count">—</strong>
+                    <small id="hero-citation-updated">Synced from local cache</small>
                 </div>
             </div>
         </div>
@@ -394,45 +395,64 @@
     </section>
 </main>
 
+<script src="data/scholar.js"></script>
 <script>
-    async function loadCitationCount() {
+    function formatCacheDate(dateString) {
+        if (!dateString) {
+            return 'Synced from local cache';
+        }
+
+        const date = new Date(dateString);
+        if (Number.isNaN(date.getTime())) {
+            return 'Synced from local cache';
+        }
+
+        return `Updated ${date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+        })}`;
+    }
+
+    function loadCitationCount() {
         const headingCounter = document.getElementById('citation-count');
         const heroCounter = document.getElementById('hero-citation-count');
-        const target = 'https://scholar.google.com/citations?user=BsQ8IUcAAAAJ&hl=en';
+        const heroUpdated = document.getElementById('hero-citation-updated');
+        const fallbackUrl = 'https://scholar.google.com/citations?user=BsQ8IUcAAAAJ&hl=en';
+        const payload = window.__SCHOLAR_CACHE__ || null;
 
         if (!headingCounter && !heroCounter) {
             return;
         }
 
         try {
-            const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(target);
-            const res = await fetch(proxyUrl);
-            if (!res.ok) {
-                throw new Error(res.statusText);
-            }
-
-            const html = await res.text();
-            const doc = new DOMParser().parseFromString(html, 'text/html');
-            const cell = doc.querySelector('#gsc_rsb_st tbody tr:nth-child(1) td:nth-child(2)');
-            const count = cell ? cell.textContent.trim() : '';
-
-            if (!count) {
-                throw new Error('Citation count not found');
-            }
+            const scholarUrl = payload?.scholar_url || fallbackUrl;
+            const citationText = typeof payload?.citations === 'number'
+                ? payload.citations.toLocaleString('en-US')
+                : null;
+            const updatedText = formatCacheDate(payload?.updated_at);
 
             if (headingCounter) {
-                headingCounter.innerHTML = `<a href="${target}" target="_blank" rel="noopener">Google Scholar · ${count} citations</a>`;
+                headingCounter.innerHTML = citationText
+                    ? `<a href="${scholarUrl}" target="_blank" rel="noopener">Google Scholar · ${citationText} citations</a>`
+                    : `<a href="${scholarUrl}" target="_blank" rel="noopener">Google Scholar</a>`;
             }
             if (heroCounter) {
-                heroCounter.textContent = count;
+                heroCounter.textContent = citationText || 'Google Scholar';
+            }
+            if (heroUpdated) {
+                heroUpdated.textContent = updatedText;
             }
         } catch (error) {
-            console.error('Citation fetch error:', error);
+            console.error('Citation cache error:', error);
             if (headingCounter) {
-                headingCounter.innerHTML = `<a href="${target}" target="_blank" rel="noopener">Google Scholar</a>`;
+                headingCounter.innerHTML = `<a href="${fallbackUrl}" target="_blank" rel="noopener">Google Scholar</a>`;
             }
             if (heroCounter) {
                 heroCounter.textContent = 'Google Scholar';
+            }
+            if (heroUpdated) {
+                heroUpdated.textContent = 'Local cache unavailable';
             }
         }
     }

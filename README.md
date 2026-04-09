@@ -10,4 +10,10 @@
   - [GitHub](https://github.com/EtaYang10th)
   - [Personal Website](https://etayang10th.github.io/)
 
+## Citation Cache
+- The homepage reads citation data from `data/scholar.js` for better compatibility when opening the site locally.
+- `data/scholar.json` is kept as the raw cache source alongside the generated JS file.
+- The cache can be refreshed automatically by the GitHub Actions workflow in `.github/workflows/update-scholar-cache.yml`.
+- You can also refresh it manually with `python3 scripts/update_scholar.py`.
+
 ---
