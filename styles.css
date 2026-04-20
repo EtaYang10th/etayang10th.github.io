@@ -361,7 +361,7 @@ summary:focus-visible {
 }
 
 .about-grid {
-    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+    grid-template-columns: 1fr;
 }
 
 .skills-grid,
