@@ -1,6 +1,6 @@
 window.__SCHOLAR_CACHE__ = {
-  "citations": 657,
+  "citations": 658,
   "scholar_url": "https://scholar.google.com/citations?user=BsQ8IUcAAAAJ&hl=en",
-  "updated_at": "2026-07-14T15:24:43Z",
+  "updated_at": "2026-07-16T15:40:04Z",
   "source": "Google Scholar"
 };
