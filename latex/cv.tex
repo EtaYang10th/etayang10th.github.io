@@ -52,9 +52,19 @@
 
 \section{Experience}
 \begin{itemize}[leftmargin=*, label={}]
-    \item \textbf{TikTok Inc.} \hfill May 2026 -- August 2026 \\
-    Research Scientist Intern \\
-    San Jose, CA
+    \item \textbf{TikTok Inc.} \hfill May 2026 -- Present \\
+    Research Scientist Intern, San Jose, CA
+    \begin{itemize}[leftmargin=1.2em, label={\textbullet}, topsep=2pt, itemsep=1pt]
+        \item Built a self-evolving agent framework that externalizes experience into a retrievable
+        asset pool of memories, skills and tools, and maintains it at scale through hybrid recall,
+        write-time deduplication, scope revision and consolidation into skills.
+        \item Formalized evolution as a coverage-versus-compression trade-off, with a stopping
+        criterion on its marginal return, the boundary at which further evolution stops paying, and
+        the optimal storage granularity as a function of retriever quality.
+        \item Characterized the decision problem in LLM memory maintenance: unconditional erasure
+        makes collapse structural, so repairs narrow an asset's applicability boundary against a
+        frozen base rather than rewrite or delete it.
+    \end{itemize}
 \end{itemize}
 
 \section{Publications}
