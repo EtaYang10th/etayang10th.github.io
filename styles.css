@@ -597,12 +597,6 @@ summary:focus-visible {
     border-color: rgba(22, 101, 52, 0.22);
 }
 
-.badge-submit {
-    background: rgba(217, 119, 6, 0.14);
-    color: #92400e;
-    border-color: rgba(217, 119, 6, 0.24);
-}
-
 .badge-arxiv {
     background: rgba(100, 116, 139, 0.14);
     color: #475569;
